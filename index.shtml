@@ -1,0 +1,10 @@
+<!--#set var="code" value="Under Construction" -->
+<!--#set var="reason" value="Under Construction" -->
+<!--#set var="msg" value="This is ${HTTP_HOST}." -->
+<!--#set var="msg2" value="Under construction. Coming soon!" -->
+<!--#set var="favicon" value="favicon.ico" -->
+<!--#set var="logo" value="logo.png" -->
+<!--#set var="tagline" value="Sample tagline" -->
+<!--#set var="ogimage" value="ogimage2.jpg" -->
+
+<!--#include virtual="biz_errordocument.shtml" -->

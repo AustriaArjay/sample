@@ -1,0 +1,10 @@
+<!--#set var="code" value="403" -->
+<!--#set var="reason" value="Forbidden" -->
+<!--#set var="msg" value="Where, oh where are you trying to go?" -->
+<!--#set var="msg2" value="Where, oh where can it be?" -->
+<!--#set var="favicon" value="favicon.ico" -->
+<!--#set var="logo" value="logo.png" -->
+<!--#set var="tagline" value="Access is forbidden to the requested page." -->
+<!--#set var="ogimage" value="ogimage.jpg" -->
+
+<!--#include virtual="biz_errordocument.shtml" -->

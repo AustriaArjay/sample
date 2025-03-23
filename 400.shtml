@@ -1,0 +1,10 @@
+<!--#set var="code" value="400" -->
+<!--#set var="reason" value="Bad Request" -->
+<!--#set var="msg" value="What, oh what are you trying to say?" -->
+<!--#set var="msg2" value="What, oh what can it be?" -->
+<!--#set var="favicon" value="favicon.ico" -->
+<!--#set var="logo" value="logo.png" -->
+<!--#set var="tagline" value="" -->
+<!--#set var="ogimage" value="ogimage.jpg" -->
+
+<!--#include virtual="biz_errordocument.shtml" -->

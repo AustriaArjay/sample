@@ -1,0 +1,10 @@
+<!--#set var="code" value="500" -->
+<!--#set var="reason" value="Internal Server Error" -->
+<!--#set var="msg" value="What, oh what is going on?" -->
+<!--#set var="msg2" value="What, oh what can it be?" -->
+<!--#set var="favicon" value="favicon.ico" -->
+<!--#set var="logo" value="logo.png" -->
+<!--#set var="tagline" value="The request was not completed. The server met an unexpected condition." -->
+<!--#set var="ogimage" value="ogimage.jpg" -->
+
+<!--#include virtual="biz_errordocument.shtml" -->

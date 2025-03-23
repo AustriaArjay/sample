@@ -1,0 +1,115 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <meta name="description" content="Technomancer provides beautifully-designed websites, customized payroll systems, and e-commerce solutions for your business." />
+    <meta name="keywords" content="web design, hosting, programming, testing, QA, BPO, business, inventory, accounting, CRM, database" />
+    <meta name="author" content="www.technomancer.biz" />
+
+    <meta property="og:title" content="<!--#echo var='code' -->: <!--#echo var='reason' -->">
+    <meta property="og:description" content="Technomancer provides beautifully-designed websites, customized payroll systems, and e-commerce solutions for your business." />
+    <meta property="og:image" content="https://www.technomancer.biz/error_docs/images/ogimage.jpg" />
+    <meta property="og:type" content="website" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
+
+    <script src="https://www.technomancer.biz/error_docs/js/jquery-2.1.3.min.js"></script>
+	<script src="https://www.technomancer.biz/error_docs/js/plugins.js"></script>
+	<script src="https://www.technomancer.biz/error_docs/js/main.min.js"></script>
+
+</head>
+<body></body>
+
+<script>
+
+    function createCORSRequest(method, url) {
+        var xhr = new XMLHttpRequest();
+
+        if ("withCredentials" in xhr) { // XHR for Chrome/Firefox/Opera/Safari.
+            xhr.open(method, url, true);
+        } else if (typeof XDomainRequest != "undefined") {  // XDomainRequest for IE.
+            xhr = new XDomainRequest();
+            xhr.open(method, url);
+        } else {    // CORS not supported.
+            xhr = null;
+        }
+        return xhr;
+    }
+
+    // Helper method to parse the title tag from the response.
+    function getBody(text) {
+        return(text.match('<div (.|\n|\r)*</div>')[0]);
+    }
+
+    // Make the actual CORS request.	
+    function makeCorsRequest() {
+        var url = '';
+        if ("<!--#echo var='code' -->" == "Under Construction") {
+            url = 'https://www.technomancer.biz/error_docs/underconstruction.php'
+        }
+        else {
+            url = 'https://www.technomancer.biz/error_docs/errordoc.php';
+        }
+
+        var xhr = createCORSRequest('GET', url);
+        if (!xhr) {
+            alert('CORS not supported');
+            return;
+        }
+
+        // Response handlers.
+        xhr.onload = function() {
+            var text = xhr.responseText;
+            $("html").html(text);
+            $("html").hide();
+            
+            if ("<!--#echo var='code' -->" == "Under Construction") {
+                $("title").html("<!--#echo var="HTTP_HOST" --> - Under Construction");
+            }
+            else {
+                $("title").html("<!--#echo var="code" -->: <!--#echo var="reason" -->");
+            }
+            
+
+            $("<head></head>").insertBefore("#replace_head");
+            $('#replace_head').children().each(function() {
+                $(this).detach().appendTo("head");
+            });
+            $('#replace_head').remove();
+
+            $("<body></body>").insertBefore("#replace_body");
+            $("body").attr('id', 'top');
+            $('#replace_body').children().each(function() {
+                $(this).detach().appendTo("body");
+            });
+            $('#replace_body').remove();
+
+            $("#var_favicon").attr('href', '<!--#echo var="favicon" -->');
+            $("#var_code").html('<!--#echo var="code" -->');
+            $("#var_reason").html('<!--#echo var="reason" -->');
+            $("#var_msg").html('<!--#echo var="msg" -->');
+            $("#var_msg2").html('<!--#echo var="msg2" -->');
+            $("#var_website_link_name").html('<!--#echo var="HTTP_HOST" -->');
+            $("#var_website_link_name").attr('href', 'https://<!--#echo var="HTTP_HOST" -->');
+            $("#var_tagline").html('<!--#echo var="tagline" -->');
+            $("#var_logo").attr('src', '<!--#echo var="logo" -->');
+            
+            $("#preloader").remove();
+            $("html").fadeIn(1500);
+        };
+
+        xhr.onerror = function() {
+            alert('Woops, there was an error making the request.');
+        };
+
+        xhr.send();
+    }
+    makeCorsRequest();
+
+</script>
+
+</html>

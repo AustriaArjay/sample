@@ -1,0 +1,11 @@
+<!--#set var="code" value="401" -->
+<!--#set var="reason" value="Unauthorized" -->
+<!--#set var="msg" value="Where, oh where are you trying to go?" -->
+<!--#set var="msg2" value="Where, oh where can it be?" -->
+<!--#set var="favicon" value="favicon.ico" -->
+<!--#set var="logo" value="logo.png" -->
+<!--#set var="tagline" value="The requested page requires authentication." -->
+<!--#set var="website_name" value="BizSomething" -->
+<!--#set var="ogimage" value="ogimage.jpg" -->
+
+<!--#include virtual="biz_errordocument.shtml" -->

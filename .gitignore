@@ -1,0 +1,4 @@
+error_log
+.ea-php-cli.cache
+.htaccess
+.env

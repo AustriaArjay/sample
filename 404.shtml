@@ -1,0 +1,10 @@
+<!--#set var="code" value="404" -->
+<!--#set var="reason" value="Page Not Found" -->
+<!--#set var="msg" value="Where, oh where did my little page go?" -->
+<!--#set var="msg2" value="Where, oh where could it be?" -->
+<!--#set var="favicon" value="favicon.ico" -->
+<!--#set var="logo" value="logo.png" -->
+<!--#set var="tagline" value="" -->
+<!--#set var="ogimage" value="ogimage.jpg" -->
+
+<!--#include virtual="biz_errordocument.shtml" -->
