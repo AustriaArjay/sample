@@ -44,7 +44,7 @@
     <nav>
         <div class="nav__container">
             <div id="nav-toggle" class="nav__toggle">
-                <img src="resources\images\brand.png">
+                <img src="resources\brand.png">
                 <a class="logo">Insurance Guy PH</a>
             </div>
             <div id="nav-menu" class="nav__menu">
@@ -114,7 +114,7 @@
             </div>
         </div>
         <div class="about__img">
-            <img src="resources\images\insuranceguy.jpg" alt="Gabino Cunada" class="about-image">
+            <img src="resources\insuranceguy.jpg" alt="Gabino Cunada" class="about-image">
         </div>
     </section>
 
@@ -124,37 +124,37 @@
         <h3>FOR INDIVIDUALS AND FAMILIES:</h3>
         <div class="service-cards">
             <div class="service-card">
-                <img src="resources\images\background-banner\12.png">
+                <img src="resources\banner\12.png">
                 <i class="fas fa-heartbeat service-icon"></i>
                 <h3>Life Insurance</h3>
                 <p>Ensure your family's financial security in case of unforeseen events.</p>
             </div>
             <div class="service-card">
-            <img src="resources\images\background-banner\12.png">
+            <img src="resources\banner\12.png">
                 <i class="fas fa-briefcase service-icon"></i>
                 <h3>Health Insurance</h3>
                 <p>Cover medical expenses & critical illnesses.</p>
             </div>
             <div class="service-card">
-            <img src="resources\images\background-banner\12.png">
+            <img src="resources\banner\12.png">
                 <i class="fas fa-piggy-bank service-icon"></i>
                 <h3>Investment Planning</h3>
                 <p>Enjoy financial freedom when you retire.</p>
             </div>
             <div class="service-card">
-                <img src="resources\images\background-banner\12.png">
+                <img src="resources\banner\12.png">
                 <i class="fas fa-umbrella-beach service-icon"></i>
                 <h3>Retirement Planning</h3>
                 <p>Enjoy financial freedom when you retire.</p>
             </div>
             <div class="service-card">
-                <img src="resources\images\background-banner\12.png">       
+                <img src="resources\banner\12.png">       
                 <i class="fas fa-money-bill service-icon"></i>
                 <h3>Income Protection</h3>
                 <p>Safeguard your earnings & secure your future.</p>
             </div>
             <div class="service-card">
-                <img src="resources\images\background-banner\12.png">
+                <img src="resources\banner\12.png">
                 <i class="fas fa-graduation-cap service-icon"></i>
                 <h3>Education Fund Planning</h3>
                 <p>Ensure your children’s education without financial stress.</p>
@@ -164,25 +164,25 @@
         <h3>FOR BUSINESS AND CORPORATE CLIENTS:</h3>
         <div class="service-cards">
             <div class="service-card">
-                <img src="resources\images\background-banner\12.png">
+                <img src="resources\banner\12.png">
                 <i class="fas fa-notes-medical service-icon"></i>
                 <h3>Customized HMO & Medical Insurance Plan</h3>
                 <p>Provide employees with affordable and comprehensive healthcare solutions.</p>
             </div>
             <div class="service-card">
-                <img src="resources\images\background-banner\12.png">
+                <img src="resources\banner\12.png">
                 <i class="fas fa-user-group service-icon"></i>
                 <h3>Group Life Insurance & Employee Benefits</h3>
                 <p>Protect your workforce and boost employee retention.</p>
             </div>
             <div class="service-card">
-                <img src="resources\images\background-banner\12.png">
+                <img src="resources\banner\12.png">
                 <i class="fas fa-building service-icon"></i>
                 <h3>Company Investment & Retirement Plans</h3>
                 <p>Help employees prepare for a financially stable future.</p>
             </div>
             <div class="service-card">
-                <img src="resources\images\background-banner\12.png">
+                <img src="resources\banner\12.png">
                 <i class="fas fa-coins service-icon"></i>
                 <h3>Financial Wellness Seminars </h3>
                 <p>Equip your team with essential financial knowledge for smarter money management.</p>
@@ -196,7 +196,7 @@
         <h2>Maxicare Plans</h2>
         <div class="maxicare-plans">
             <div class="maxicare-plan">
-                <img src="./img/prima.png">
+                <img src="resources\services\prima.png">
                 <h3>PRIMA GOLD</h3>
                 <p>
                     Unlimited access to over 800 prescribed lab tests, diagnostics, and 
@@ -206,7 +206,7 @@
                 <p><strong>₱16,880 (One time payment)</strong></p>
             </div>
             <div class="maxicare-plan">
-                <img src="./img/lifesaver.png">
+                <img src="resources\services\lifesaver.png">
                 <h3>LifesavER</h3>
                 <p>
                     Outpatient Emergency coverage in Maxicare partner hospitals nationwide.
@@ -214,7 +214,7 @@
                 <p><strong>₱2,299</strong></p>
             </div>
             <div class="maxicare-plan">
-                <img src="./img/lifesaver_plus.png">
+                <img src="resources\services\lifesaver_plus.png">
                 <h3>LifesavER+</h3>
                 <p>
                     Emergency coverage leading to confinement throughout Maxicare partner 
